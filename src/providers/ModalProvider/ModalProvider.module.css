@@ -1,0 +1,64 @@
+#modal-portal {
+  visibility: collapse;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#modal-portal.active {
+  visibility: visible;
+  display: flex;
+  background-color: #00000088;
+
+  opacity: 1;
+
+  transition: opacity 0.33s ease-in-out;
+}
+
+/*****  MODAL CONFIRM   *****/
+
+#modal-confirm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+
+  width: 100%;
+  height: 100%;
+}
+
+#modal-confirm > h3 {
+  height: 100%;
+  margin: auto;
+}
+
+#buttons {
+  display: flex;
+  gap: 1rem;
+  color: white;
+}
+
+#buttons > button {
+  padding: 1rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+#confirm {
+  background-color: rgb(28, 153, 28);
+}
+
+#cancel {
+  background-color: rgb(172, 39, 22);
+}

@@ -1,0 +1,30 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  background-color: var(--secondary-color);
+  min-height: 2.5rem;
+}
+
+.todo-item:has(.complete) > .todo-title {
+  background-color: red;
+  text-decoration: dashed;
+}
+
+.todo-item:is(.complete) .todo-title {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.button.flat.remove-todo {
+  width: max-content;
+  height: 1.2rem;
+  padding: 0;
+  aspect-ratio: 1;
+
+  background-color: red;
+
+  margin-left: auto;
+}

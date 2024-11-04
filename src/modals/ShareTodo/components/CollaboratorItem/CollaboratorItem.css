@@ -1,0 +1,20 @@
+.collaborator-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+
+  background-color: var(--primary-color);
+}
+
+.collaborator-item.removed {
+  opacity: 0.5;
+}
+
+.flat.remove-collaborator {
+  height: 1rem;
+  width: 1rem;
+
+  padding: 0;
+}

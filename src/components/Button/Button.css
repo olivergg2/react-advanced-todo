@@ -1,0 +1,34 @@
+.button {
+  background-color: var(--theme-color);
+  border-radius: 0.2rem;
+  padding: 0.8rem 1.2rem;
+
+  transition: opacity 0.2s ease-in-out;
+
+  height: 3rem;
+  min-height: 3rem;
+
+  font-size: 1rem;
+  text-wrap: nowrap;
+}
+
+.button.bold {
+  font-weight: 600;
+}
+
+.button:not(:disabled) {
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.4;
+}
+
+/* FLAT BUTTON */
+.button.flat {
+  background-color: transparent;
+  border: none;
+
+  height: auto;
+  min-height: auto;
+}

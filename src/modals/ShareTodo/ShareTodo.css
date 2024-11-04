@@ -1,0 +1,14 @@
+#collaborators {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+#username-input[data-error='true'] {
+  border: 1px solid red;
+}
+
+#share-error {
+  text-align: center;
+}

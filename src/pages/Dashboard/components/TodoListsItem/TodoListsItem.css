@@ -1,0 +1,17 @@
+.todo-lists-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+
+  border-radius: 0.2rem;
+  border: 1px solid var(--border-color);
+
+  cursor: pointer;
+
+  transition: opacity 0.15s ease-in-out;
+}
+
+.todo-lists-item:hover {
+  opacity: 0.6;
+}

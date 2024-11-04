@@ -1,0 +1,41 @@
+.modal {
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 0.2rem;
+  position: relative;
+
+  min-width: 18rem;
+  min-height: 12rem;
+
+  height: max-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  color: var(--text-color);
+}
+
+.modal-header {
+  display: flex;
+  width: 100%;
+}
+
+.modal-header[data-centered='true'] {
+  justify-content: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+
+  background-color: transparent;
+  color: var(--text-color);
+  border: none;
+  height: 1rem;
+  width: 1rem;
+  aspect-ratio: 1;
+  padding: 0rem;
+}
