@@ -8,22 +8,22 @@ import './Login.css'
 function Login() {
   const { close } = useModalManager()
   const { login } = useAuth()
-  const [username, setUsername] = useState('')
+  const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault()
 
-    const success = await login(username, password)
+    const success = await login(email, password)
 
     if (success) close()
   }
 
-  const isSubmitAllowed = username.trim().length >= 3 && password.trim().length >= 6
+  const isSubmitAllowed = email.trim().length >= 3 && password.trim().length >= 6
 
   return (
     <form id="login-form" onSubmit={handleSubmit}>
-      <TextInput filled placeholder="Användarnamn..." value={username} update={setUsername} />
+      <TextInput filled placeholder="Email..." value={email} update={setEmail} />
       <TextInput
         filled
         placeholder="Super säkert lösenord..."

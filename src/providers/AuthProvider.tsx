@@ -36,8 +36,8 @@ export function AuthProvider({ children }: PropsWithChildren) {
     checkAuthStatus()
   }, [])
 
-  async function login(username: string, password: string) {
-    const success = await AuthService.login(username, password)
+  async function login(email: string, password: string) {
+    const success = await AuthService.login(email, password)
 
     if (success) {
       await checkAuthStatus()
